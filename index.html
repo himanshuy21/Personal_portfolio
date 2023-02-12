@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box css from boxicon  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- favicon linkning  -->
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon" />
+    <!-- Remix Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio | Himanshu Yadav</title>
+    <link rel=" stylesheet" href="/Styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8d6d979b73.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- creating the header section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="./img/favicon.jpg" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hi I'm Himanshu Yadav</p>
+          <h1>
+            <span>Frontent <br />Developer</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about section  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="" srcset="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subTitle">About me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos voluptatum corporis pariatur, et quisquam at excepturi
+              saepe voluptatem magnam qui tempore necessitatibus voluptatum
+              corporis quae deserunt molestiae facere rem repellendus, explicabo
+              ut fuga iure magni temporibus neque saepe voluptas illum odio?
+              Repellendus ex tempore nesciunt ipsum! Alias dicta neque corrupti
+              necessitatibus accusamus at saepe. Ducimus, repudiandae.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tabs" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Devlopment</span><br />Web Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Skills </span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Devlopment</span><br />Web Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Education</span><br />Designing Web/App Interfaces
+                </li>
+                <li><span>Web Devlopment</span><br />Web Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----- seriveces ----  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subTitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Dev</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo
+              minima possimus distinctio ipsum, explicabo voluptate rerum
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo
+              minima possimus distinctio ipsum, explicabo voluptate rerum
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo
+              minima possimus distinctio ipsum, explicabo voluptate rerum
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------my work or postfolio --------  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subTitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" srcset="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                laboriosam praesentium ex neque ipsa odit!
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" srcset="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                laboriosam praesentium ex neque ipsa odit!
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" srcset="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                laboriosam praesentium ex neque ipsa odit!
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- --------- contact -------  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subTitle">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i> contact@exmaple.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 0546465454</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="/pdf/Himanshu Yadav Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message
+              "
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ footer copyright ---  -->
+    <div class="copyright">
+      <p>
+        Copyright &copy; 2023. Made With <i class="fas fa-heart"></i> by
+        Himanshu
+      </p>
+    </div>
+
+    <script src="/Js/index.js"></script>
+  </body>
+</html>
